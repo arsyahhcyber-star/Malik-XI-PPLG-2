@@ -1,0 +1,158 @@
+<style>
+  /* ================================================
+   RESET CSS
+   Menghilangkan margin dan padding bawaan
+   serta membuat ukuran elemen lebih mudah diatur
+================================================ */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ================================================
+   BODY
+   Mengatur font, warna background,
+   warna teks, ukuran halaman, dan jarak
+================================================ */
+  body {
+    font-family: Arial, sans-serif;
+    background: #e9eef5;
+    color: #1f2937;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+    line-height: 1.6;
+  }
+
+  /* ================================================
+   HEADER DAN SECTION
+   Memberikan background putih,
+   sudut membulat, padding, jarak,
+   dan bayangan pada kotak
+================================================ */
+  header,
+  section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  /* ================================================
+   HEADER
+   Mengatur posisi foto dan informasi
+   agar berada berdampingan
+================================================ */
+  header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #0b1f3a;
+    color: white;
+  }
+
+  /* ================================================
+   FOTO PROFIL
+   Mengatur ukuran foto, bentuk lingkaran,
+   posisi gambar, dan border putih
+================================================ */
+  header img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+  }
+
+  /* ================================================
+   NAMA
+   Mengatur ukuran tulisan nama
+   dan jarak bagian bawah
+================================================ */
+  h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+  }
+
+  /* ================================================
+   INFORMASI KONTAK
+   Memberikan jarak atas dan warna
+   biru muda pada nomor HP
+================================================ */
+  .contact {
+    margin-top: 12px;
+    color: #dbeafe;
+  }
+
+  /* ================================================
+   JUDUL SECTION
+   Mengatur warna judul dan memberikan
+   garis bawah pada setiap judul section
+================================================ */
+  h2 {
+    color: #0b1f3a;
+    border-bottom: 2px solid #173f73;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+  }
+
+  /* ================================================
+   DAFTAR KEAHLIAN
+   Membuat keahlian tersusun dalam
+   3 kolom menggunakan CSS Grid
+================================================ */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    list-style: none;
+  }
+
+  /* ================================================
+   KOTAK KEAHLIAN
+   Mengatur background, garis sebelah kiri,
+   padding, dan sudut kotak
+================================================ */
+  .skills li {
+    background: #edf3fa;
+    border-left: 4px solid #173f73;
+    padding: 12px;
+    border-radius: 6px;
+  }
+
+  /* ================================================
+   FOOTER
+   Mengatur warna background, warna teks,
+   posisi teks, padding, dan sudut kotak
+================================================ */
+  footer {
+    text-align: center;
+    background: #0b1f3a;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  /* ================================================
+   RESPONSIVE / MEDIA QUERY
+   Digunakan ketika website dibuka
+   pada layar HP dengan lebar maksimal 600px
+================================================ */
+  @media (max-width: 600px) {
+
+    /* Header berubah menjadi susunan vertikal */
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    /* Keahlian berubah menjadi 1 kolom */
+    .skills {
+      grid-template-columns: 1fr;
+    }
+
+  }
+</style>
